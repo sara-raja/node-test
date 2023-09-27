@@ -5,20 +5,20 @@ const bodyParser = require('body-parser');
 // // const cors = require('cors')
 
 // require('dotenv').config()
-let mongoose;
 try {
   mongoose = require("mongoose");
 } catch (e) {
   console.log(e);
 }
+let mongoose = require('mongoose');
 
-// mongoose.connect("mongodb+srv://sara-raja:GMlyF6PZqsjFFTjX@cluster0.6jakbkf.mongodb.net/?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true })
-// .then(()=>{
-//   console.log("banzai")
-// })
-// .catch((err) => {
-//   console.error(err)
-// });
+mongoose.connect("mongodb+srv://sara-raja:GMlyF6PZqsjFFTjX@cluster0.6jakbkf.mongodb.net/?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true })
+.then(()=>{
+  console.log("banzai")
+})
+.catch((err) => {
+  console.error(err)
+});
 
 // // app.use(cors())
 app.use(express.static('public'))
