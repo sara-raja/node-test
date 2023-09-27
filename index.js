@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 
-// const bodyParser = require('body-parser');
+const bodyParser = require('body-parser');
 // // const cors = require('cors')
 
 // require('dotenv').config()
@@ -12,10 +12,10 @@ const app = express()
 // });
 
 // // app.use(cors())
-// app.use(express.static('public'))
-// app.use(bodyParser.urlencoded({
-//   extended: false
-// }))
+app.use(express.static('public'))
+app.use(bodyParser.urlencoded({
+  extended: false
+}))
 
 app.get("/", function(req, res) {
   res.sendFile(__dirname + '/views/index.html')
