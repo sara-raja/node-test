@@ -5,14 +5,13 @@ const app = express()
 
 // require('dotenv').config()
 // let mongoose = require('mongoose');
-
 // mongoose.connect('mongodb+srv://sara-raja:GMlyF6PZqsjFFTjX@cluster0.6jakbkf.mongodb.net/?retryWrites=true&w=majority', {
 //   useNewUrlParser: true,
 //   useUnifiedTopology: true
 // });
 
 // // app.use(cors())
-// app.use(express.static('public'))
+app.use(express.static('public'))
 // app.use(bodyParser.urlencoded({
 //   extended: false
 // }))
