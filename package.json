@@ -4,12 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
-  }
+    "body-parser": "^1.15.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.12.4",
+    "mongoose": "^5.11.15"
+  },
+  "keywords": [
+    "node",
+    "mongoose",
+    "express"
+  ],
+  "author": "Shirasa P",
+  "license": "MIT"
 }
