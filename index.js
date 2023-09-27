@@ -21,6 +21,10 @@ app.get("/", function(req, res) {
   res.sendFile(__dirname + '/views/index.html')
 })
 
+app.get("/testing", function(req, res) {
+  res.json("Hello world")
+})
+
 // const userSchema = new mongoose.Schema({
 //   username: {
 //     type: String,
