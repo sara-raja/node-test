@@ -5,7 +5,13 @@ const bodyParser = require('body-parser');
 // // const cors = require('cors')
 
 // require('dotenv').config()
-let mongoose = require('mongoose');
+let mongoose;
+try {
+  mongoose = require("mongoose");
+} catch (e) {
+  console.log(e);
+}
+
 mongoose.connect("mongodb+srv://sara-raja:GMlyF6PZqsjFFTjX@cluster0.6jakbkf.mongodb.net/?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true })
 .then(()=>{
   console.log("banzai")
