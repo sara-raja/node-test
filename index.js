@@ -1,21 +1,21 @@
 const express = require('express')
 const app = express()
-// const cors = require('cors')
-const bodyParser = require('body-parser');
+// // const cors = require('cors')
+// const bodyParser = require('body-parser');
 
-require('dotenv').config()
-let mongoose = require('mongoose');
+// require('dotenv').config()
+// let mongoose = require('mongoose');
 
-mongoose.connect('mongodb+srv://sara-raja:GMlyF6PZqsjFFTjX@cluster0.6jakbkf.mongodb.net/?retryWrites=true&w=majority', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-});
+// mongoose.connect('mongodb+srv://sara-raja:GMlyF6PZqsjFFTjX@cluster0.6jakbkf.mongodb.net/?retryWrites=true&w=majority', {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true
+// });
 
-// app.use(cors())
-app.use(express.static('public'))
-app.use(bodyParser.urlencoded({
-  extended: false
-}))
+// // app.use(cors())
+// app.use(express.static('public'))
+// app.use(bodyParser.urlencoded({
+//   extended: false
+// }))
 
 app.get("/", function(req, res) {
   res.sendFile(__dirname + '/views/index.html')
